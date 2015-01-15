@@ -34,7 +34,8 @@ class Student {
         }
         return $total/count($this->grades);
     }
-    
+    // create a preformatted string containing the student data, with grade
+    // formatted to 2 decimal places
     function toString() {
         $result = $this->first_name . ' ' . $this->surname;
         $result .= ' (avg. grade: ' . number_format($this->average(),2) . ")\n";
